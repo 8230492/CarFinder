@@ -1,0 +1,70 @@
+/* src/SearchBar.css */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  max-width: 700px; /* Largura máxima ajustada */
+  width: 60%; /* Barra com largura menor */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  padding: 0.3rem; /* Reduzido para diminuir a altura do background */
+  border-radius: 8px;
+}
+
+.search-input {
+  flex-grow: 2; /* O campo de pesquisa cresce para preencher o espaço */
+  padding: 0.5rem 1rem; /* Diminui o padding para reduzir a altura */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 220px; /* Ajusta a largura do campo de pesquisa */
+}
+
+.search-input:focus {
+  border-color: #2980b9;
+}
+
+.search-btn {
+  padding: 0.5rem 1rem; /* Diminui o padding para diminuir a altura */
+  background-color: #2980b9;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.search-btn:hover {
+  background-color: #2c3e50;
+  transform: scale(1.05); /* Animação de zoom suave */
+}
+
+.search-btn:active {
+  background-color: #1a252f; /* Cor mais escura ao clicar */
+}
+
+.search-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2c3e50; /* Efeito de foco */
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    margin-bottom: 1rem; /* Espaço abaixo do input */
+    width: 100%; /* Faz com que o campo de pesquisa ocupe toda a largura */
+  }
+
+  .search-btn {
+    width: 100%;
+    margin-top: 0.5rem; /* Espaço entre os botões */
+  }
+}

@@ -1,0 +1,81 @@
+/* src/CarGrid.css */
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Define 4 colunas */
+  row-gap: 15px; /* Espaçamento entre os cards */
+  column-gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-items: center; /* Centraliza os cards na grid */
+  justify-content: center;
+  text-decoration: none;
+  padding: 20px 350px;
+}
+
+.car-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center; /* Centraliza o texto dentro do card */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  height: 210px; /* Tamanho reduzido para o card */
+  max-height: 210px; /* Limita a altura máxima do card */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassar a altura */
+  width: 320px; /* Define a largura fixa para o card */
+  text-decoration: none;
+  position: relative; /* Necessário para posicionamento absoluto dos elementos internos */
+  transition: .3s ease;
+}
+
+.car-card:hover {
+  box-shadow: 0px 0px 30px rgb(0 0 0 / 10%);
+  transform: translateY(-10px);
+}
+
+.car-card img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do card */
+  height: 150px; /* Define uma altura fixa para as imagens */
+  object-fit: cover; /* Mantém a proporção da imagem e preenche a área sem distorcer */
+   border-radius: 8px;/* Arredonda as bordas da imagem */
+}
+
+.car-brand {
+  position: absolute;
+  bottom: 20px; /* Ajuste conforme necessário */
+  left: 10px; /* Ajuste conforme necessário */
+  text-decoration: none;
+  color: rgb(199, 199, 199); /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 17px !important; /* Tamanho da fonte menor para a marca */
+}
+
+.car-name {
+  position: absolute;
+  bottom: -10px; /* Ajuste conforme necessário */
+  left: 10px; /* Ajuste conforme necessário */
+  text-decoration: none;
+  color: black; /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 25px !important; /* Tamanho da fonte maior para o modelo */
+}
+
+/* CSS Revisado para Paginação com Botões Redondos e Ícones */
+.pagination {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  gap: 15px; /* Espaçamento entre os botões */
+  margin: 30px 0; /* Espaçamento acima e abaixo da paginação */
+  font-family: Arial, sans-serif; /* Torna a fonte mais moderna */
+}
+
+.loading-container {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}

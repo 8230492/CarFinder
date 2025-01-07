@@ -1,0 +1,96 @@
+/* src/Header.css */
+.header {
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  flex-direction: column; /* Organiza a barra de busca abaixo do logo, se necessário */
+  padding: 0.01rem;
+  box-sizing: border-box;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Espaça os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 0; /* Certifique-se de que não há margens/paddings indesejados */
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-image {
+  width: 40px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.login {
+  display: flex;
+  gap: 5px; /* Maior espaçamento entre os botões */
+  align-items: center; /* Alinha verticalmente os botões */
+  margin-right: 20px;
+}
+
+.login button {
+  padding: 0.5rem 1rem; /* Ajuste de tamanho para os botões */
+  background-color: #2980b9; /* Cor similar ao botão de pesquisa */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Bordas arredondadas, semelhante aos botões da search bar */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.login button:hover {
+  background-color: #34495e; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Animação de zoom suave */
+}
+
+.login button:active {
+  background-color: #1a252f; /* Cor mais escura ao clicar */
+}
+
+.login button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2c3e50; /* Efeito de foco */
+}
+
+/* Estilo para o ícone de perfil */
+.profile-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2980b9; /* Cor similar aos outros botões */
+  border-radius: 50%; /* Bordas arredondadas */
+  padding: 0.5rem; /* Ajuste de tamanho para o ícone */
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.profile-icon-link:hover {
+  background-color: #34495e; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Animação de zoom suave */
+}
+
+.profile-icon-link:active {
+  background-color: #1a252f; /* Cor mais escura ao clicar */
+}
+
+.profile-icon-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2c3e50; /* Efeito de foco */
+}
+
+.profile-icon {
+  color: white; /* Cor do ícone */
+  font-size: 30px; /* Tamanho do ícone */
+}

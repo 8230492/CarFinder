@@ -1,0 +1,129 @@
+.details-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .car-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .car-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .car-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .details-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* Maior espaço entre a foto e a caixa de especificações */
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .car-image img {
+    width: 200%;
+    max-width: 1000px; /* Aumenta o tamanho máximo da imagem */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .car-info {
+    flex: 1;
+    margin-left: auto; /* Empurra a caixa de especificações para a direita */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Define um tamanho máximo para a caixa de especificações */
+  }
+  
+  .car-info h2 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .car-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+  .car-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .car-info ul li {
+    font-size: 16px;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+  .car-info ul li:before {
+    content: "•";
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 15px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .details-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .car-image img {
+      max-width: 100%;
+    }
+  
+    .car-info {
+      width: 100%;
+      margin-left: 0; /* Remove o deslocamento à direita em telas pequenas */
+      padding: 15px;
+    }
+  
+    .car-info h2 {
+      font-size: 20px;
+    }
+  
+    .car-info p,
+    .car-info ul li {
+      font-size: 14px;
+    }
+  }
+  
+  .loading-container {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+  }

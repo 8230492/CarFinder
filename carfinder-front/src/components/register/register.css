@@ -1,0 +1,96 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 360px;
+  padding: 30px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.register-container form label {
+  margin-top: 15px;
+  margin-bottom: 5px; /* Adiciona espaço entre o label e o campo */
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+}
+
+.register-container form input {
+  margin-top: 8px;
+  margin-bottom: 25px; /* Aumenta o espaçamento inferior entre os campos */
+  width: calc(100% - 24px); /* Garante espaço uniforme à esquerda e à direita */
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f1f3f4;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  color: #333;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.register-container form input:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+.register-container form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-container form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-container form button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.register-container .form-footer {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+.register-container .form-footer a {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-container .form-footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
