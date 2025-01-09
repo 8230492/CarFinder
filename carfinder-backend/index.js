@@ -28,3 +28,16 @@ mongoose.connect(config.db)
 server.listen(port, hostname, () => {
 	console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+//___________________________________________________
+
+app.use(express.static("./frontend/build"));
+app.get("*", (req, res) => {
+	res.sendFile(path.resolve(__dirname,"frontend","build","index.html"))
+});
+
+/*
+app.listen(port, () => {
+	console.log('App esta em escuta na porta ${port}');
+})
+*/
